@@ -1,0 +1,151 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+.main-section{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    height:60vh;
+    width:35vw;
+    margin:10% auto;
+    border: 1px solid black;
+    border-radius:10px;
+    padding:10px;
+}
+
+.screen {
+    display:block;
+    border-radius:10px;
+    background:gray;
+    width:100%;
+    height:30%;
+    box-shadow:0px 0px 20px rgb(0 0 0/10%);
+    text-align:center;
+    padding:2% 0;
+}
+
+.screen #screen{
+    width:95%;
+    height:90%;
+    border-radius:5px;
+    padding:10px;
+    text-align:end;
+    font-size:2.5rem;
+}
+
+.button{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    height:100%;
+    background:#fff;
+    box-shadow:0px 0px 20px rgb(0 0 0/10%);
+    border-radius:10px;
+    padding:10px;
+}
+
+.upper{
+    display:flex;
+    gap:10px;
+    width:100%;
+    height:25%;
+}
+
+.upper button{
+    height:100%;
+    width:25%;
+    text-align:center;
+    padding-top:auto;
+    background:palevioletred;
+    border-radius:5px;
+}
+
+.lower{
+    display:flex;
+    gap:10px;
+    width:100%;
+    height:75%;
+}
+
+.lower .left{
+    width:75%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.left .first, .left .third ,.left .second{
+    width:100%;
+    height:33.33%;
+}
+
+.lower .right{
+    width:25%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.right .big{
+    height:66%;
+    width:100%;
+}
+
+.right .small{
+    height:33%;
+    width:100%;
+}
+
+.big, .small{
+    text-align:center;
+    padding-top:auto;
+    background:palevioletred;
+    border-radius:5px; 
+}
+
+.big:hover, .small:hover{
+    cursor: pointer;
+    transform:scale(1.03);
+}
+
+.main-section .button .lower .left{
+    display:flex;
+    flex-direction:column;
+}
+
+.first, .second, .third{
+    display:flex;
+    gap:10px;
+}
+
+.first button, .second button , .third button{
+    height:100%;
+    width:33.33%;
+    text-align:center;
+    padding-top:auto;
+    background:palevioletred;
+    border-radius:5px;
+}
+
+.first button:hover, .second button:hover,.third button:hover,.upper button:hover{
+    cursor: pointer;
+    transform:scale(1.03);
+}
+
+h4{
+    margin-top:0.5rem;
+    font-size:2rem;
+    color:#fff;
+}
+
+@media screen and (max-width:400px){
+    .main-section{
+        width:90vw;
+        height:80vh;
+    }
+}
